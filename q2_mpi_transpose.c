@@ -41,7 +41,6 @@ int main(int argc, char *argv[])
         for (int j = 0; j < N; j++)
             subAT[j * rows_per_proc + i] = subA[i * N + j];
 
-    // Gather transposed blocks
     MPI_Gather(subAT, rows_per_proc * N, MPI_INT,
                AT, rows_per_proc * N, MPI_INT,
                0, MPI_COMM_WORLD);
