@@ -1,0 +1,2 @@
+Image size: 512x512
+CUDA convolution completed successfully

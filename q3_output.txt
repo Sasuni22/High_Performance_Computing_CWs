@@ -1,0 +1,2 @@
+Vector size: 1048576
+CUDA Dot Product Result: 2097152.000000
