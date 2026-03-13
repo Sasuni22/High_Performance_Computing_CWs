@@ -5,7 +5,6 @@
 #define HEIGHT 512
 #define TILE 16
 
-// CUDA kernel for 3x3 convolution using shared memory
 __global__ void convolutionKernel(unsigned char *input, unsigned char *output) {
     __shared__ unsigned char tile[TILE+2][TILE+2]; // shared memory tile with 1-pixel halo
 
